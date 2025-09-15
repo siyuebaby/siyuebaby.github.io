@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MiniFlipClock - 技术支持</title>
+  <style>
+    :root{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#222}
+    body{margin:0;padding:32px;background:#f7f8fb}
+    .container{max-width:900px;margin:0 auto;background:#fff;padding:28px;border-radius:12px;box-shadow:0 6px 24px rgba(20,20,50,0.06)}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    header img{width:56px;height:56px;object-fit:cover;border-radius:8px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:#555;margin-top:8px}
+    h2{margin-top:26px;margin-bottom:8px;font-size:18px}
+    ul{margin:0 0 12px 20px}
+    footer{margin-top:28px;color:#666;font-size:13px;text-align:center}
+    a{color:#2563eb;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .card{background:#f9fafb;padding:18px;border-radius:10px;margin:12px 0}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/logo.png" alt="App logo (替换 /logo.png)" onerror="this.style.display='none'" />
+      <div>
+        <h1>MiniFlipClock - 技术支持</h1>
+        <p class="lead">我们随时准备为您解答使用中的问题</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>常见问题 (FAQ)</h2>
+      <div class="card">
+        <h3>应用是否需要联网？</h3>
+        <p>不需要。本应用完全离线运行，不会联网，也不会上传任何数据。</p>
+      </div>
+      <div class="card">
+        <h3>数据是否会丢失？</h3>
+        <p>所有数据都保存在您的本地设备中。如果卸载应用，数据可能会被清除，请谨慎操作。</p>
+      </div>
+      <div class="card">
+        <h3>应用是否支持横竖屏切换？</h3>
+        <p>应用支持横竖屏显示，具体效果取决于您设备的系统设置。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>联系我们</h2>
+      <p>如果您在使用过程中遇到问题或有任何建议，欢迎通过以下方式联系我们：</p>
+      <ul>
+        <li>邮箱：<a href="mailto:1275143540@qq.com">1275143540@qq.com</a></li>
+      </ul>
+      <p>我们会尽快在工作日内回复您的问题。</p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> MiniFlipClock • 技术支持页面</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
